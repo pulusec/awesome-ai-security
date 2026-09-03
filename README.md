@@ -23,6 +23,7 @@ If you want to contribute, create a PR or contact me [@ottosulin](https://mastod
   - [Steganography & Covert Channels](#steganography--covert-channels)
 - [Benchmarks & Evaluations](#benchmarks--evaluations)
 - [Defense & Security Controls](#defense--security-controls)
+  - [Agent Identity & Access Management](#agent-identity--access-management)
   - [Input/Output Guardrails](#inputoutput-guardrails)
   - [Agent Runtime Security & Sandboxing](#agent-runtime-security--sandboxing)
   - [MCP Security](#mcp-security)
@@ -85,6 +86,8 @@ If you want to contribute, create a PR or contact me [@ottosulin](https://mastod
 * [AI Verify](https://github.com/aiverify-foundation/aiverify) - _Singapore government-backed AI testing framework and toolkit for verifying AI system properties against governance frameworks._
 * [Agent Control Standard](https://github.com/GenAI-Security-Project/agent-control-standard) - _Open standard for runtime agent control: declarative hooks, policy enforcement, and observability across AI agent frameworks (OWASP GenAI Security Project)._
 * [AARM](https://aarm.dev) - _Cloud Security Alliance specification defining the system category and capabilities for agentic runtime security._
+* [AAGATE](https://cloudsecurityalliance.org/blog/2025/12/22/aagate-a-nist-ai-rmf-aligned-governance-platform-for-agentic-ai) - _CSA's Kubernetes-native, NIST AI RMF-aligned governance reference architecture for agentic AI, combining agent identity (ANS/SPIFFE), zero-trust service mesh, and behavioral risk telemetry._
+* [AIUC-1](https://aiuc.com/) - _Certification standard for AI agents covering security, safety, reliability, and accountability, developed with Stanford, MIT, MITRE, CSA, and others; crosswalks to NIST AI RMF, MITRE ATLAS, and OWASP._
 
 ### Taxonomies, Terminology & Risk Databases
 * [NIST AI 100-2e2023](https://csrc.nist.gov/publications/detail/white-paper/2023/03/08/adversarial-machine-learning-taxonomy-and-terminology/draft) - _Adversarial machine learning taxonomy and terminology_
@@ -205,6 +208,12 @@ If you want to contribute, create a PR or contact me [@ottosulin](https://mastod
 
 ## Defense & Security Controls
 
+### Agent Identity & Access Management
+* [Okta for AI Agents](https://www.okta.com/solutions/secure-ai/) - _Registers AI agents as first-class identities in Universal Directory, issuing short-lived scoped credentials via the open Cross App Access (XAA) protocol; includes agent discovery, lifecycle management, and an Agent Gateway enforcement point._
+* [Microsoft Entra Agent ID](https://learn.microsoft.com/en-us/entra/agent-id/what-is-microsoft-entra-agent-id) - _Extends Zero Trust (Conditional Access, Identity Protection, PIM) to AI agents as specialized service principals with no standing credentials, using short-lived tokens over OAuth 2.0, MCP, and A2A._
+* [CyberArk Secure AI Agents Solution](https://www.cyberark.com/resources/agentic-ai-security/cyberark-secure-ai-agents-solution) - _Identity security platform purpose-built for AI agents: discovery, ownership/access-rights profiles, zero standing privileges, just-in-time access, and continuous session monitoring._
+* [Amazon Bedrock AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-overview.html) - _Identity and credential management service for AI agents, providing OAuth 2.0 flows, a resource token vault, and least-privilege workload identities for accessing AWS and third-party services._
+
 ### Input/Output Guardrails
 * [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) - _NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems._
 * [LlamaFirewall](https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall) - _LlamaFirewall is a framework designed to detect and mitigate AI centric security risks, supporting multiple layers of inputs and outputs, such as typical LLM chat and more advanced multi-step agentic operations._
@@ -221,6 +230,9 @@ If you want to contribute, create a PR or contact me [@ottosulin](https://mastod
 * [CodeGate](https://codegate.ai) - _An open-source, privacy-focused project that acts as a layer of security within a developer's Code Generation AI workflow_
 * [Future AGI](https://github.com/future-agi/future-agi) - _Open-source self-hostable platform with built-in real-time guardrails for unsafe outputs (jailbreak, PII, injection, toxicity), evals, tracing, simulations, and gateway for LLM and agent applications._
 * [Prompt Injection Defenses](https://github.com/tldrsec/prompt-injection-defenses) - _Comprehensive collection of every practical and proposed defense against prompt injection._
+* [Palo Alto Prisma AIRS](https://www.paloaltonetworks.com/ai-security/ai-gateway) - _AI Gateway control plane inspecting LLM prompts, MCP interactions, and agent-to-agent traffic inline; combines runtime guardrails against prompt injection/data exfiltration with agent identity and governance controls._
+* [Lasso Security](https://www.lasso.security/) - _CPU-only, transformer-free guardrail engine (LEAP) for sub-5ms prompt/response classification, paired with a self-hosted policy-judgment engine (RAPID)._
+* [Zenity](https://zenity.io/) - _AI agent security and governance platform: live agent inventory, posture management, and runtime detection & response across SaaS, cloud, and endpoint agents._
 
 ### Agent Runtime Security & Sandboxing
 * [OpenShell](https://github.com/NVIDIA/OpenShell) - _OpenShell is the safe, private runtime for autonomous AI agents. It provides sandboxed execution environments governed by declarative YAML policies that prevent unauthorized file access, data exfiltration, and uncontrolled network activity._
