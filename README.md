@@ -47,6 +47,7 @@ If you want to contribute, create a PR or contact me [@ottosulin](https://mastod
 * [OWASP GenAI Threat & Defense Compass](https://genai.owasp.org/resource/owasp-genai-security-project-threat-defense-compass-1-0/) - _Reference guide mapping GenAI threats to corresponding defensive controls._
 * [NCSC Guidelines for Secure AI System Development](https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development) - _Practical guidelines co-authored by NCSC (UK) and CISA for secure AI development, covering design, development, deployment, and operation._
 * [CoSAI – Preparing Defenders for a Changing Cybersecurity Landscape](https://github.com/cosai-oasis/ws2-defenders) - _Coalition for Secure AI workstream preparing defenders for AI-era threats._
+* [When Guardrails Aren't Enough: Reinventing Agentic AI Security With Architectural Controls](https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Brauchler-When-Guardrails-Arent-Enough.pdf) - _Black Hat USA 2025 talk (David Brauchler III, NCC Group). Argues guardrails are statistical defense-in-depth, not security boundaries, and introduces concrete architectural controls — trust binding, trust tagging, trust isolation, trust splitting, intent-based segmentation, datatype gating — plus source/sink matrices and "Models As Threat Actors" (MATA) threat modeling._
 
 ### Courses, Labs & CTFs
 * [Damn Vulnerable MCP Server](https://github.com/harishsg993010/damn-vulnerable-MCP-server) - _A deliberately vulnerable implementation of the Model Context Protocol (MCP) for educational purposes._
